@@ -74,3 +74,22 @@ def correlation_graphs(data,columns): #takes a bit
     plt.show()
     
     
+#---------------------------------------------------------------------------------------------------------------------------
+
+def absolute_frequency(data,categorical):
+    for var in categorical:
+    print("-------------------------------" + var + "-------------------------------")
+    print(data[var].value_counts())
+    
+#---------------------------------------------------------------------------------------------------------------------------
+
+def relative_frequency(data,categorical):
+    for var in categorical:
+    print("-------------------------------" + var + "-------------------------------")
+    print(data[var].value_counts()/np.float(data.shape[0]))
+
+
+
+
+
+
